@@ -6,15 +6,15 @@
   
   <title>算法复杂度推导（nlogn） | uvabc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="&amp;nbsp; T(n)&#x3D;2T(n2)+n&#x3D;2(2T(n22)+n2)+n&#x3D;2(2(2T(n23)+n22)+n2)+n&#x3D;⋯&#x3D;2kT(n2k)+kn&#x3D;nT(1)+nlog⁡n&#x3D;O(nlog⁡n)\begin{aligned} T(n)&amp;&#x3D;2T(\frac{n}{2})+n\\ &amp;&#x3D;2(2T(\frac{n}{2^2})+\frac{n}{2})+n\\ &amp;&#x3D;2(2(2T(\f">
+  <meta name="description" content="&amp;nbsp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法复杂度推导（nlogn）">
 <meta property="og:url" content="https://uvabc.github.io/2021/03/31/nlogn/index.html">
 <meta property="og:site_name" content="uvabc">
-<meta property="og:description" content="&amp;nbsp; T(n)&#x3D;2T(n2)+n&#x3D;2(2T(n22)+n2)+n&#x3D;2(2(2T(n23)+n22)+n2)+n&#x3D;⋯&#x3D;2kT(n2k)+kn&#x3D;nT(1)+nlog⁡n&#x3D;O(nlog⁡n)\begin{aligned} T(n)&amp;&#x3D;2T(\frac{n}{2})+n\\ &amp;&#x3D;2(2T(\frac{n}{2^2})+\frac{n}{2})+n\\ &amp;&#x3D;2(2(2T(\f">
+<meta property="og:description" content="&amp;nbsp;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-31T02:30:00.000Z">
-<meta property="article:modified_time" content="2021-04-01T08:54:09.064Z">
+<meta property="article:modified_time" content="2021-04-01T09:41:52.133Z">
 <meta property="article:author" content="uvabc">
 <meta property="article:tag" content="Algorithm">
 <meta name="twitter:card" content="summary">
@@ -101,6 +101,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>&nbsp;</p>
+<span id="more"></span>
+
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.24999999999999992em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>T</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mn>2</mn><mi>T</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mi>T</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><msup><mn>2</mn><mn>2</mn></msup></mfrac><mo stretchy="false">)</mo><mo>+</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mi>T</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><msup><mn>2</mn><mn>3</mn></msup></mfrac><mo stretchy="false">)</mo><mo>+</mo><mfrac><mi>n</mi><msup><mn>2</mn><mn>2</mn></msup></mfrac><mo stretchy="false">)</mo><mo>+</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mo>⋯</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>k</mi></msup><mi>T</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><msup><mn>2</mn><mi>k</mi></msup></mfrac><mo stretchy="false">)</mo><mo>+</mo><mi>k</mi><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>n</mi><mi>T</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
 T(n)&amp;=2T(\frac{n}{2})+n\\
 &amp;=2(2T(\frac{n}{2^2})+\frac{n}{2})+n\\
@@ -122,7 +124,7 @@ n &amp;= 2^k\\
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://uvabc.github.io/2021/03/31/nlogn/" data-id="ckmyo3y7l0001g8oubwzh4h41" data-title="算法复杂度推导（nlogn）" class="article-share-link">Share</a>
+      <a data-url="https://uvabc.github.io/2021/03/31/nlogn/" data-id="ckmyowafe000118ou60tqds7k" data-title="算法复杂度推导（nlogn）" class="article-share-link">Share</a>
       
       
       
